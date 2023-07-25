@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: 
+              linear-gradient(45deg, #0000ff 0%, #33ccff 70%) repeat scroll 0% 0%, 
+              linear-gradient(135deg, #0000ff 10%, #33ccff 80%) repeat scroll 0% 0%, 
+              linear-gradient(225deg, #0000ff 10%, #33ccff 80%) repeat scroll 0% 0%, 
+              rgba(0, 0, 0, 0) linear-gradient(315deg, #0000ff 100%, #33ccff 70%) repeat scroll 0% 0%;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+  color: #333;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #ffffff; /* Baby blue */
+    font-weight: 700;
+  }
+  
+  #newTaskForm {
+    display: flex;
+  }
+  
+  input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  #newTaskInput {
+    flex: 1 1 0%;
+    background-color: #f0f8ff;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: #4da1ff;
+    background-image: linear-gradient(to left, #ffffff, #e6f9ff); 
+  }
+  
+  #newTaskInput::placeholder {
+    color: #4da1ff; 
+  }
+  
+  #newTaskSubmit {
+    color: #4da1ff; 
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: sans-serif;
+    font-weight: 600;
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  #newTaskSubmit:hover {
+    opacity: 0.8;
+  }
+  
+  #newTaskSubmit:active {
+    opacity: 0.6;
+  }
+  
+  main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .taskList {
+    padding: 1rem;
+  }
+  
+  .taskList h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff; 
+    margin-bottom: 1rem;
+  }
+    
+  #tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f8ff;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  #tasks .task .content {
+    flex: 1 1 0%;
+  }
+  
+  #tasks .task .content .text {
+    color: #4da1ff;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+  }
+  
+  #tasks .task .content .text:not(:read-only) {
+    color: rgb(15, 87, 232);
+  }
+  
+  #tasks .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+  }
+  
+  .task .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+  }
+  
+  .task .actions button:hover {
+    opacity: 0.8;
+  }
+  
+  .task .actions button:active {
+    opacity: 0.6;
+  }
+  
+  .task .actions .edit {
+    background-image: linear-gradient(to right, #ffea00, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .task .actions .delete {
+    background-image: linear-gradient(to right, #ff0000, #00c3ff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  }
+  
+  .task .actions .done {
+    background-image: linear-gradient(to right, #00c3ff, #00ff37); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  }
+  
+  .task.completed .content .text {
+    text-decoration: line-through;
+    color: rgb(15, 87, 232);
+  }
+  
